@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | RealVision3D</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="contact-page">
+  <header class="header scrolled">
+    <div class="container header-container">
+      <div class="logo">
+        <a href="index.html">REALVISION3D</a>
+      </div>
+      <nav class="main-nav">
+        <button class="mobile-menu-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li class="nav-item"><a href="services.html">Services</a></li>
+          <li class="nav-item"><a href="portfolio.html">Portfolio</a></li>
+          <li class="nav-item"><a href="about.html">About</a></li>
+          <li class="nav-item"><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1 class="page-title">Contact Us</h1>
+        <p class="page-subtitle">Get in touch for 3D virtual tour services or technical support</p>
+      </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="contact-info-section">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <h3>Visit Our Office</h3>
+            <address>
+              123 Tech Lane, Suite 400<br>
+              New York, NY 10001<br>
+              United States
+            </address>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <h3>Call Us</h3>
+            <p><a href="tel:+12125551234">(212) 555-1234</a></p>
+            <p>Monday - Friday: 9am - 6pm</p>
+            <p>Saturday: 10am - 4pm</p>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <h3>Email Us</h3>
+            <p><a href="mailto:info@realvision3d.com">info@realvision3d.com</a></p>
+            <p><a href="mailto:support@realvision3d.com">support@realvision3d.com</a></p>
+            <p>We'll respond within 24 hours</p>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-comments"></i>
+            </div>
+            <h3>Live Chat</h3>
+            <p>Available 24/7 for technical support</p>
+            <button class="btn btn-secondary start-chat-btn">Start Chat</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form & Map -->
+    <section class="contact-form-section">
+      <div class="container">
+        <div class="contact-form-map">
+          <div class="contact-form-container">
+            <h2>Request a Quote</h2>
+            <p>Complete the form below with your project details, and our team will contact you with pricing and availability.</p>
+            <form class="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-name">Your Name</label>
+                  <input type="text" id="contact-name" name="name" required>
+                </div>
+                <div class="form-group">
+                  <label for="contact-email">Email Address</label>
+                  <input type="email" id="contact-email" name="email" required>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-phone">Phone Number</label>
+                  <input type="tel" id="contact-phone" name="phone">
+                </div>
+                <div class="form-group">
+                  <label for="contact-company">Company/Agency</label>
+                  <input type="text" id="contact-company" name="company">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="service-type">Service Type</label>
+                  <select id="service-type" name="service">
+                    <option value="">Select a service</option>
+                    <option value="standard">Standard Package</option>
+                    <option value="premium">Premium Package</option>
+                    <option value="ultra">Ultra Package</option>
+                    <option value="custom">Custom Project</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="property-address">Property Address</label>
+                  <input type="text" id="property-address" name="address">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="property-type">Property Type</label>
+                  <select id="property-type" name="property-type">
+                    <option value="">Select property type</option>
+                    <option value="residential">Residential</option>
+                    <option value="commercial">Commercial</option>
+                    <option value="multi-family">Multi-Family</option>
+                    <option value="land">Land/Development</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="property-size">Property Size (sq ft)</label>
+                  <input type="number" id="property-size" name="size" min="0">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="contact-message">Project Details</label>
+                <textarea id="contact-message" name="message" rows="6" placeholder="Please provide any specific requirements or questions about your project."></textarea>
+              </div>
+              <div class="form-group privacy-policy">
+                <input type="checkbox" id="privacy-consent" name="privacy-consent" required>
+                <label for="privacy-consent">I agree that my data will be processed according to the <a href="privacy.html">Privacy Policy</a>.</label>
+              </div>
+              <button type="submit" class="btn btn-primary submit-btn">Request Quote</button>
+            </form>
+          </div>
+          <div class="map-container">
+            <div class="map-responsive">
+              <!-- Replace this with an actual Google Maps embed in a real implementation -->
+              <img src="assets/images/map-placeholder.jpg" alt="Office location map" class="map-placeholder">
+            </div>
+            <div class="map-overlay">
+              <div class="map-info">
+                <h3>RealVision3D Headquarters</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Tech Lane, Suite 400, New York, NY 10001</p>
+                <a href="https://maps.google.com" target="_blank" class="btn btn-text">Get Directions <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service Areas -->
+    <section class="service-areas-section">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title">Service Areas</h2>
+          <p class="section-subtitle">We capture and model properties across the United States</p>
+        </header>
+        <div class="service-areas-grid">
+          <div class="area-card">
+            <div class="area-image">
+              <img src="assets/images/area-ny.jpg" alt="New York">
+              <div class="area-overlay">
+                <h3>Northeast</h3>
+              </div>
+            </div>
+            <div class="area-content">
+              <ul class="area-cities">
+                <li>New York City</li>
+                <li>Boston</li>
+                <li>Philadelphia</li>
+                <li>Washington DC</li>
+                <li>+ surrounding areas</li>
+              </ul>
+            </div>
+          </div>
+          <div class="area-card">
+            <div class="area-image">
+              <img src="assets/images/area-miami.jpg" alt="Miami">
+              <div class="area-overlay">
+                <h3>Southeast</h3>
+              </div>
+            </div>
+            <div class="area-content">
+              <ul class="area-cities">
+                <li>Miami</li>
+                <li>Atlanta</li>
+                <li>Orlando</li>
+                <li>Charlotte</li>
+                <li>+ surrounding areas</li>
+              </ul>
+            </div>
+          </div>
+          <div class="area-card">
+            <div class="area-image">
+              <img src="assets/images/area-chicago.jpg" alt="Chicago">
+              <div class="area-overlay">
+                <h3>Midwest</h3>
+              </div>
+            </div>
+            <div class="area-content">
+              <ul class="area-cities">
+                <li>Chicago</li>
+                <li>Detroit</li>
+                <li>Minneapolis</li>
+                <li>Cleveland</li>
+                <li>+ surrounding areas</li>
+              </ul>
+            </div>
+          </div>
+          <div class="area-card">
+            <div class="area-image">
+              <img src="assets/images/area-la.jpg" alt="Los Angeles">
+              <div class="area-overlay">
+                <h3>West Coast</h3>
+              </div>
+            </div>
+            <div class="area-content">
+              <ul class="area-cities">
+                <li>Los Angeles</li>
+                <li>San Francisco</li>
+                <li>Seattle</li>
+                <li>Portland</li>
+                <li>+ surrounding areas</li>
+              </ul>
+            </div>
+          </div>
+          <div class="area-card">
+            <div class="area-image">
+              <img src="assets/images/area-denver.jpg" alt="Denver">
+              <div class="area-overlay">
+                <h3>Mountain</h3>
+              </div>
+            </div>
+            <div class="area-content">
+              <ul class="area-cities">
+                <li>Denver</li>
+                <li>Salt Lake City</li>
+                <li>Boise</li>
+                <li>Phoenix</li>
+                <li>+ surrounding areas</li>
+              </ul>
+            </div>
+          </div>
+          <div class="area-card">
+            <div class="area-image">
+              <img src="assets/images/area-texas.jpg" alt="Texas">
+              <div class="area-overlay">
+                <h3>Southwest</h3>
+              </div>
+            </div>
+            <div class="area-content">
+              <ul class="area-cities">
+                <li>Dallas</li>
+                <li>Houston</li>
+                <li>Austin</li>
+                <li>San Antonio</li>
+                <li>+ surrounding areas</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="service-areas-note">
+          <p>Don't see your area? We may still serve your location! <a href="#" class="check-availability-link">Check availability</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Support -->
+    <section class="support-section">
+      <div class="container">
+        <div class="support-grid">
+          <div class="support-content">
+            <h2>Technical Support</h2>
+            <p>Need help with your existing virtual tours or integration? Our technical support team is ready to assist.</p>
+            <div class="support-options">
+              <div class="support-option">
+                <div class="option-icon">
+                  <i class="fas fa-ticket-alt"></i>
+                </div>
+                <div class="option-content">
+                  <h3>Submit a Ticket</h3>
+                  <p>Get help with specific technical issues by submitting a detailed support ticket.</p>
+                  <a href="support.html" class="btn btn-outline">Open Ticket</a>
+                </div>
+              </div>
+              <div class="support-option">
+                <div class="option-icon">
+                  <i class="fas fa-book"></i>
+                </div>
+                <div class="option-content">
+                  <h3>Knowledge Base</h3>
+                  <p>Find solutions in our comprehensive knowledge base of tutorials and guides.</p>
+                  <a href="knowledge-base.html" class="btn btn-outline">Browse Articles</a>
+                </div>
+              </div>
+              <div class="support-option">
+                <div class="option-icon">
+                  <i class="fas fa-video"></i>
+                </div>
+                <div class="option-content">
+                  <h3>Video Tutorials</h3>
+                  <p>Watch step-by-step video tutorials for common integration questions.</p>
+                  <a href="tutorials.html" class="btn btn-outline">Watch Videos</a>
+                </div>
+              </div>
+            </div>
+            <div class="support-hours">
+              <h3>Support Hours</h3>
+              <p><strong>Technical Support:</strong> Monday - Friday, 9am - 8pm EST</p>
+              <p><strong>Emergency Support:</strong> 24/7 for critical issues</p>
+            </div>
+          </div>
+          <div class="support-form">
+            <h3>Quick Support Request</h3>
+            <form class="quick-support-form">
+              <div class="form-group">
+                <label for="support-email">Email Address</label>
+                <input type="email" id="support-email" required>
+              </div>
+              <div class="form-group">
+                <label for="support-type">Support Type</label>
+                <select id="support-type">
+                  <option value="integration">Integration Help</option>
+                  <option value="tour-issues">Tour Issues</option>
+                  <option value="account">Account Questions</option>
+                  <option value="billing">Billing Support</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="support-issue">Brief Description</label>
+                <textarea id="support-issue" rows="3" placeholder="Please describe the issue you're experiencing..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Get Support</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-subtitle">Quick answers to common questions</p>
+        </header>
+        <div class="faq-container">
+          <div class="faq-item">
+            <button class="faq-question">
+              What information do you need to provide a quote?
+              <span class="faq-icon"><i class="fas fa-plus"></i></span>
+            </button>
+            <div class="faq-answer">
+              <p>To provide an accurate quote, we typically need the property address, size (square footage), type (residential, commercial, etc.), number of rooms, and any specific requirements or features you need. The more details you can provide, the more precise our quote will be.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              How quickly can you schedule a property capture?
+              <span class="faq-icon"><i class="fas fa-plus"></i></span>
+            </button>
+            <div class="faq-answer">
+              <p>In most major metropolitan areas, we can schedule property captures within 2-3 business days. For rural locations or during peak seasons, it may take 3-5 business days. We also offer expedited scheduling for urgent projects at an additional fee.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              How do I integrate the virtual tour into my website?
+              <span class="faq-icon"><i class="fas fa-plus"></i></span>
+            </button>
+            <div class="faq-answer">
+              <p>Integration is simple! We provide an embed code that works with any HTML website, similar to embedding a YouTube video. We also offer direct plugins for WordPress, Wix, and Squarespace, as well as specialized integration for MLS systems and real estate portals like Zillow and Realtor.com.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              Do you offer ongoing support after the tour is created?
+              <span class="faq-icon"><i class="fas fa-plus"></i></span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes, all our packages include technical support for the duration of your hosting period. Our Premium and Ultra packages also include maintenance updates and minor modifications to the tour as needed. Additional substantial changes or updates are available as add-on services.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              Can I request changes to the virtual tour after it's completed?
+              <span class="faq-icon"><i class="fas fa-plus"></i></span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes, we offer revision services for completed tours. Premium and Ultra packages include one round of revisions at no additional cost. Standard packages can add revision services for a fee. Major changes such as virtual staging adjustments or structural modifications are available as add-on services.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-column">
+          <div class="footer-logo">REALVISION3D</div>
+          <p class="footer-description">Setting new standards in real estate marketing with immersive virtual technology.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3 class="footer-heading">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3 class="footer-heading">Contact Us</h3>
+          <address class="footer-contact">
+            <p><i class="fas fa-map-marker-alt"></i> 123 Tech Lane, Suite 400<br>New York, NY 10001</p>
+            <p><i class="fas fa-phone"></i> <a href="tel:+12125551234">(212) 555-1234</a></p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:info@realvision3d.com">info@realvision3d.com</a></p>
+          </address>
+        </div>
+        <div class="footer-column">
+          <h3 class="footer-heading">Newsletter</h3>
+          <p>Subscribe to receive updates on our latest technology and services.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2025 RealVision3D. All rights reserved.</p>
+        <ul class="footer-policy-links">
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>

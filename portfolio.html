@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | RealVision3D</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/portfolio.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="portfolio-page">
+  <header class="header scrolled">
+    <div class="container header-container">
+      <div class="logo">
+        <a href="index.html">REALVISION3D</a>
+      </div>
+      <nav class="main-nav">
+        <button class="mobile-menu-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li class="nav-item"><a href="services.html">Services</a></li>
+          <li class="nav-item"><a href="portfolio.html" class="active">Portfolio</a></li>
+          <li class="nav-item"><a href="about.html">About</a></li>
+          <li class="nav-item"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1 class="page-title">Our Portfolio</h1>
+        <p class="page-subtitle">Explore our collection of immersive virtual property experiences</p>
+      </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+      <div class="container">
+        <div class="filter-container">
+          <div class="filter-categories">
+            <button class="filter-btn active" data-filter="all">All Properties</button>
+            <button class="filter-btn" data-filter="residential">Residential</button>
+            <button class="filter-btn" data-filter="commercial">Commercial</button>
+            <button class="filter-btn" data-filter="luxury">Luxury Estates</button>
+            <button class="filter-btn" data-filter="development">New Developments</button>
+          </div>
+          <div class="filter-search">
+            <input type="text" id="portfolio-search" placeholder="Search projects..." aria-label="Search projects">
+            <button class="search-btn"><i class="fas fa-search"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="portfolio-grid-section">
+      <div class="container">
+        <div class="portfolio-grid">
+          <!-- Portfolio Item 1 -->
+          <div class="portfolio-item" data-category="luxury residential">
+            <div class="portfolio-image">
+              <img src="assets/images/property1.jpg" alt="Oceanfront Villa in Miami">
+              <div class="portfolio-overlay">
+                <div class="portfolio-buttons">
+                  <a href="portfolio-detail.html?id=1" class="portfolio-button">View Details</a>
+                  <a href="virtual-tour.html?id=1" class="portfolio-button portfolio-button-tour">
+                    <i class="fas fa-vr-cardboard"></i> Virtual Tour
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">Oceanfront Villa</h3>
+              <div class="portfolio-meta">
+                <div class="portfolio-location">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Miami, Florida</span>
+                </div>
+                <div class="portfolio-category">Luxury Residence</div>
+              </div>
+              <div class="portfolio-stats">
+                <div class="stat-item">
+                  <i class="fas fa-ruler-combined"></i>
+                  <span>8,500 sq ft</span>
+                </div>
+                <div class="stat-item">
+                  <i class="fas fa-eye"></i>
+                  <span>12,482 views</span>
+                </div>
+                <div class="stat-item">
+                  <i class="fas fa-clock"></i>
+                  <span>Avg. 8.5 min</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Portfolio Item 2 -->
+          <div class="portfolio-item" data-category="luxury residential">
+            <div class="portfolio-image">
+              <img src="assets/images/property2.jpg" alt="Penthouse in New York">
+              <div class="portfolio-overlay">
+                <div class="portfolio-buttons">
+                  <a href="portfolio-detail.html?id=2" class="portfolio-button">View Details</a>
+                  <a href="virtual-tour.html?id=2" class="portfolio-button portfolio-button-tour">
+                    <i class="fas fa-vr-cardboard"></i> Virtual Tour
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">Penthouse Suite</h3>
+              <div class="portfolio-meta">
+                <div class="portfolio-location">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>New York, New York</span>
+                </div>
+                <div class="portfolio-category">Luxury Residence</div>
+              </div>
+              <div class="portfolio-stats">
+                <div class="stat-item">
+                  <i class="fas fa-ruler-combined"></i>
+                  <span>5,200 sq ft</span>
+                </div>
+                <div class="stat-item">
+                  <i class="fas fa-eye"></i>
+                  <span>10,147 views</span>
+                </div>
+                <div class="stat-item">
+                  <i class="fas fa-clock"></i>
+                  <span>Avg. 7.2 min</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Portfolio Item 3 -->
+          <div class="portfolio-item" data-category="luxury residential">
+            <div class="portfolio-image">
+              <img src="assets/images/property3.jpg" alt="Mountain Retreat in Aspen">
+              <div class="portfolio-overlay">
+                <div class="portfolio-buttons">
+                  <a href="portfolio-detail.html?id=3" class="portfolio-button">View Details</a>
+                  <a href="virtual-tour.html?id=3" class="portfolio-button portfolio-button-tour">
+                    <i class="fas fa-vr-cardboard"></i> Virtual Tour
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">Mountain Retreat</h3>
+              <div class="portfolio-meta">
+                <div class="portfolio-location">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Aspen, Colorado</span>
+                </div>
+                <div class="portfolio-category">Luxury Residence</div>
+              </div>
+              <div class="portfolio-stats">
+                <div class="stat-item">
+                  <i class="fas fa-ruler-combined"></i>
+                  <span>7,800 sq ft</span>
+                </div>
+                <div class="stat-item">
+                  <i class="fas fa-eye"></i>
+                  <span>8,742 views</span>
+                </div>
+                <div class="stat-item">
+                  <i class="fas fa-clock"></i>
+                  <span>Avg. 9.1 min</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Portfolio Item 4 - Commercial -->
+          <div class="portfolio-item" data-category="commercial">
+            <div class="portfolio-image">
+              <img src="assets/images/commercial1.jpg" alt="Downtown Office Building">
+              <div class="portfolio-overlay">
+                <div class="portfolio-buttons">
+                  <a href="portfolio-detail.html?id=4" class="portfolio-button">View Details</a>
+                  <a href="virtual-tour.html?id=4" class="portfolio-button portfolio-button-tour">
+                    <i class="fas fa-vr-cardboard"></i> Virtual Tour
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">Downtown Tower</h3>
+              <div class="portfolio-meta">
+                <div class="portfolio-location">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Chicago, Illinois</span>
+                </div>
+                <div class="portfolio-category">Commercial Office</div>
+              </div>
+              <div class="portfolio-stats">
+                <div class="stat-item">
+                  <i class="fas fa-ruler-combined"></i>
+                  <span>120,000 sq ft</span>
+                </div>
+                <div class="stat-item">
+                  <i class="fas fa-eye"></i>
+                  <span>5,328 views</span>
+                </div>
+                <div class="stat-item">
+                  <i class="fas fa-clock"></i>
+                  <span>Avg. 12.5 min</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Portfolio Item 5 - Commercial -->
+          <div class="portfolio-item" data-category="commercial">
+            <div class="portfolio-image">
+              <img src="assets/images/commercial2.jpg" alt="Retail Space">
+              <div class="portfolio-overlay">
+                <div class="portfolio-buttons">
+                  <a href="portfolio-detail.html?id=5" class="portfolio-button">View Details</a>
+                  <a href="virtual-tour.html?id=5" class="portfolio-button portfolio-button-tour">
+                    <i class="fas fa-vr-cardboard"></i> Virtual Tour
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">Retail Flagship</h3>
+              <div class="portfolio-meta">
+                <div class="portfolio-location">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Los Angeles, California</span>
+                </div>
+                <div class="portfolio-category">Commercial Retail</div>
+              </div>
+              <div class="portfolio-stats">
+                <div class="stat-item">
+                  <i class="fas fa-ruler-combined"></i>
+                  <span>15,000 sq ft</span>
+                </div>
+                <div class="stat-item">
+                  <i class="fas fa-eye"></i>
+                  <span>4,872 views</span>
+                </div>
+                <div class="stat-item">
+                  <i class="fas fa-clock"></i>
+                  <span>Avg. 6.3 min</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Portfolio Item 6 - Development -->
+          <div class="portfolio-item" data-category="development">
+            <div class="portfolio-image">
+              <img src="assets/images/development1.jpg" alt="New Condominium Development">
+              <div class="portfolio-badge">Pre-Construction</div>
+              <div class="portfolio-overlay">
+                <div class="portfolio-buttons">
+                  <a href="portfolio-detail.html?id=6" class="portfolio-button">View Details</a>
+                  <a href="virtual-tour.html?id=6" class="portfolio-button portfolio-button-tour">
+                    <i class="fas fa-vr-cardboard"></i> Virtual Tour
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">Azure Residences</h3>
+              <div class="portfolio-meta">
+                <div class="portfolio-location">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Miami, Florida</span>
+                </div>
+                <div class="portfolio-category">New Development</div>
+              </div>
+              <div class="portfolio-stats">
+                <div class="stat-item">
+                  <i class="fas fa-building"></i>
+                  <span>42 Units</span>
+                </div>
+                <div class="stat-item">
+                  <i class="fas fa-eye"></i>
+                  <span>9,624 views</span>
+                </div>
+                <div class="stat-item">
+                  <i class="fas fa-clock"></i>
+                  <span>Avg. 11.7 min</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Portfolio Item 7 - Residential -->
+          <div class="portfolio-item" data-category="residential">
+            <div class="portfolio-image">
+              <img src="assets/images/residential1.jpg" alt="Modern Suburban Home">
+              <div class="portfolio-overlay">
+                <div class="portfolio-buttons">
+                  <a href="portfolio-detail.html?id=7" class="portfolio-button">View Details</a>
+                  <a href="virtual-tour.html?id=7" class="portfolio-button portfolio-button-tour">
+                    <i class="fas fa-vr-cardboard"></i> Virtual Tour
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">Contemporary Family Home</h3>
+              <div class="portfolio-meta">
+                <div class="portfolio-location">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Austin, Texas</span>
+                </div>
+                <div class="portfolio-category">Residential</div>
+              </div>
+              <div class="portfolio-stats">
+                <div class="stat-item">
+                  <i class="fas fa-ruler-combined"></i>
+                  <span>3,200 sq ft</span>
+                </div>
+                <div class="stat-item">
+                  <i class="fas fa-eye"></i>
+                  <span>7,245 views</span>
+                </div>
+                <div class="stat-item">
+                  <i class="fas fa-clock"></i>
+                  <span>Avg. 5.8 min</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Portfolio Item 8 - Development -->
+          <div class="portfolio-item" data-category="development">
+            <div class="portfolio-image">
+              <img src="assets/images/development2.jpg" alt="Mixed-Use Development">
+              <div class="portfolio-badge">Pre-Construction</div>
+              <div class="portfolio-overlay">
+                <div class="portfolio-buttons">
+                  <a href="portfolio-detail.html?id=8" class="portfolio-button">View Details</a>
+                  <a href="virtual-tour.html?id=8" class="portfolio-button portfolio-button-tour">
+                    <i class="fas fa-vr-cardboard"></i> Virtual Tour
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">Riverside Commons</h3>
+              <div class="portfolio-meta">
+                <div class="portfolio-location">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Portland, Oregon</span>
+                </div>
+                <div class="portfolio-category">Mixed-Use Development</div>
+              </div>
+              <div class="portfolio-stats">
+                <div class="stat-item">
+                  <i class="fas fa-ruler-combined"></i>
+                  <span>250,000 sq ft</span>
+                </div>
+                <div class="stat-item">
+                  <i class="fas fa-eye"></i>
+                  <span>6,318 views</span>
+                </div>
+                <div class="stat-item">
+                  <i class="fas fa-clock"></i>
+                  <span>Avg. 14.2 min</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Portfolio Item 9 - Residential -->
+          <div class="portfolio-item" data-category="residential">
+            <div class="portfolio-image">
+              <img src="assets/images/residential2.jpg" alt="Urban Townhouse">
+              <div class="portfolio-overlay">
+                <div class="portfolio-buttons">
+                  <a href="portfolio-detail.html?id=9" class="portfolio-button">View Details</a>
+                  <a href="virtual-tour.html?id=9" class="portfolio-button portfolio-button-tour">
+                    <i class="fas fa-vr-cardboard"></i> Virtual Tour
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">Urban Townhouse</h3>
+              <div class="portfolio-meta">
+                <div class="portfolio-location">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Boston, Massachusetts</span>
+                </div>
+                <div class="portfolio-category">Residential</div>
+              </div>
+              <div class="portfolio-stats">
+                <div class="stat-item">
+                  <i class="fas fa-ruler-combined"></i>
+                  <span>2,800 sq ft</span>
+                </div>
+                <div class="stat-item">
+                  <i class="fas fa-eye"></i>
+                  <span>5,942 views</span>
+                </div>
+                <div class="stat-item">
+                  <i class="fas fa-clock"></i>
+                  <span>Avg. 6.2 min</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- No Results Message (hidden initially) -->
+        <div class="no-results" style="display: none;">
+          <div class="no-results-icon">
+            <i class="fas fa-search"></i>
+          </div>
+          <h3>No matching properties found</h3>
+          <p>Try adjusting your search criteria or browse all properties.</p>
+          <button class="btn btn-primary reset-filters-btn">Reset Filters</button>
+        </div>
+
+        <!-- Load More Button -->
+        <div class="load-more-container">
+          <button class="btn btn-primary load-more-btn">Load More Projects</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Case Study Section -->
+    <section class="case-study-section">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title">Featured Case Study</h2>
+          <p class="section-subtitle">How our virtual tours drive real results</p>
+        </header>
+        <div class="case-study-container">
+          <div class="case-study-image">
+            <img src="assets/images/case-study-main.jpg" alt="Luxury condo development case study">
+          </div>
+          <div class="case-study-content">
+            <h3 class="case-study-title">The Vista Residences</h3>
+            <p class="case-study-description">A luxury condominium development in Miami Beach leveraged our pre-construction virtual tours to achieve remarkable sales results.</p>
+            
+            <div class="case-study-results">
+              <div class="result-item">
+                <div class="result-number">65%</div>
+                <div class="result-label">Units pre-sold before construction</div>
+              </div>
+              <div class="result-item">
+                <div class="result-number">40%</div>
+                <div class="result-label">Reduction in marketing time</div>
+              </div>
+              <div class="result-item">
+                <div class="result-number">3.2x</div>
+                <div class="result-label">ROI on virtual tour investment</div>
+              </div>
+            </div>
+            
+            <a href="case-study.html?id=vista" class="btn btn-primary">Read Full Case Study</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technology Info -->
+    <section class="technology-info-section">
+      <div class="container">
+        <div class="tech-info-content">
+          <div class="tech-info-text">
+            <h2>Our Virtual Tour Technology</h2>
+            <p>All properties in our portfolio are created using our proprietary capture and rendering process, powered by Unreal Engine. Unlike standard 360° photos, our virtual tours offer:</p>
+            <ul>
+              <li><i class="fas fa-check"></i> True 3D navigation (move freely through the space)</li>
+              <li><i class="fas fa-check"></i> Photorealistic lighting and materials</li>
+              <li><i class="fas fa-check"></i> Interactive elements and information hotspots</li>
+              <li><i class="fas fa-check"></i> Time-of-day lighting variations</li>
+              <li><i class="fas fa-check"></i> Virtual staging and renovation visualization</li>
+              <li><i class="fas fa-check"></i> High-performance delivery on any device</li>
+            </ul>
+            <a href="technology.html" class="btn btn-secondary">Learn About Our Technology</a>
+          </div>
+          <div class="tech-info-video">
+            <div class="video-container">
+              <img src="assets/images/technology-demo.jpg" alt="Virtual tour technology demo">
+              <div class="video-play-button">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-content">
+          <h2 class="cta-title">Ready to Create Your Own Virtual Tour?</h2>
+          <p class="cta-description">Elevate your property listings with immersive 3D experiences.</p>
+          <div class="cta-buttons">
+            <a href="contact.html" class="btn btn-primary">Request a Quote</a>
+            <a href="services.html" class="btn btn-secondary">View Our Services</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-column">
+          <div class="footer-logo">REALVISION3D</div>
+          <p class="footer-description">Setting new standards in real estate marketing with immersive virtual technology.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3 class="footer-heading">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3 class="footer-heading">Contact Us</h3>
+          <address class="footer-contact">
+            <p><i class="fas fa-map-marker-alt"></i> 123 Tech Lane, Suite 400<br>New York, NY 10001</p>
+            <p><i class="fas fa-phone"></i> <a href="tel:+12125551234">(212) 555-1234</a></p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:info@realvision3d.com">info@realvision3d.com</a></p>
+          </address>
+        </div>
+        <div class="footer-column">
+          <h3 class="footer-heading">Newsletter</h3>
+          <p>Subscribe to receive updates on our latest technology and services.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2025 RealVision3D. All rights reserved.</p>
+        <ul class="footer-policy-links">
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/portfolio.js"></script>
+</body>
+</html>

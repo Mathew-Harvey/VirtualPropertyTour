@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RealVision3D | Immersive Virtual Property Tours</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">
+        <a href="index.html">REALVISION3D</a>
+      </div>
+      <nav class="main-nav">
+        <button class="mobile-menu-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html" class="active">Home</a></li>
+          <li class="nav-item"><a href="services.html">Services</a></li>
+          <li class="nav-item"><a href="portfolio.html">Portfolio</a></li>
+          <li class="nav-item"><a href="about.html">About</a></li>
+          <li class="nav-item"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-video-container">
+        <video class="hero-video" autoplay muted loop playsinline>
+          <source src="assets/videos/drone-capture.mp4" type="video/mp4">
+          <!-- Fallback image if video doesn't load -->
+          <img src="assets/images/hero-fallback.jpg" alt="Drone property capture">
+        </video>
+        <div class="overlay"></div>
+      </div>
+      <div class="container hero-content">
+        <h1 class="hero-title">Elevate Your Real Estate Listings</h1>
+        <p class="hero-subtitle">State-of-the-art drone capture and Unreal Engine virtual tours that help properties sell faster</p>
+        <div class="hero-cta">
+          <a href="services.html" class="btn btn-primary">Our Services</a>
+          <a href="contact.html" class="btn btn-secondary">Get a Quote</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="process-section">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title">Our Capture & Modeling Process</h2>
+          <p class="section-subtitle">How we transform real properties into immersive virtual experiences</p>
+        </header>
+        <div class="process-grid">
+          <!-- Process Step 1 -->
+          <div class="process-card">
+            <div class="process-icon">
+              <i class="fas fa-drone"></i>
+              <div class="step-number">1</div>
+            </div>
+            <h3 class="process-title">Drone Capture</h3>
+            <p class="process-description">We use advanced drones and LIDAR technology to capture every detail of the property, inside and out, with stunning precision.</p>
+          </div>
+
+          <!-- Process Step 2 -->
+          <div class="process-card">
+            <div class="process-icon">
+              <i class="fas fa-cube"></i>
+              <div class="step-number">2</div>
+            </div>
+            <h3 class="process-title">3D Modeling</h3>
+            <p class="process-description">Our team of artists and developers transform the captured data into photorealistic 3D models using Unreal Engine technology.</p>
+          </div>
+
+          <!-- Process Step 3 -->
+          <div class="process-card">
+            <div class="process-icon">
+              <i class="fas fa-server"></i>
+              <div class="step-number">3</div>
+            </div>
+            <h3 class="process-title">Web Hosting</h3>
+            <p class="process-description">We host your virtual property tours on our high-performance servers, ensuring smooth experiences for potential buyers worldwide.</p>
+          </div>
+
+          <!-- Process Step 4 -->
+          <div class="process-card">
+            <div class="process-icon">
+              <i class="fas fa-code"></i>
+              <div class="step-number">4</div>
+            </div>
+            <h3 class="process-title">Integration</h3>
+            <p class="process-description">Easily embed virtual tours into your existing listings, website, or MLS with our simple integration options and support.</p>
+          </div>
+        </div>
+        <div class="view-all-container">
+          <a href="services.html" class="btn btn-text">Learn more about our process <i class="fas fa-long-arrow-alt-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title">Why Real Estate Agents Choose Us</h2>
+          <p class="section-subtitle">Proven advantages that help you win listings and sell properties faster</p>
+        </header>
+        <div class="benefits-grid">
+          <div class="benefit-item">
+            <div class="benefit-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h3 class="benefit-title">Increased Engagement</h3>
+            <p class="benefit-description">Properties with our virtual tours receive 3x more views and 6x longer visit duration compared to standard listings.</p>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-icon">
+              <i class="fas fa-home"></i>
+            </div>
+            <h3 class="benefit-title">Faster Sales</h3>
+            <p class="benefit-description">Our clients report 31% reduced time-on-market for properties featuring our immersive virtual tours.</p>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-icon">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <h3 class="benefit-title">Win More Listings</h3>
+            <p class="benefit-description">Differentiate your services with cutting-edge technology that impresses sellers and wins competitive listing presentations.</p>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3 class="benefit-title">Better Qualified Buyers</h3>
+            <p class="benefit-description">Virtual tours pre-qualify prospects, resulting in higher quality showings and more serious buyers.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Preview -->
+    <section class="portfolio-preview">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title">Featured Virtual Tours</h2>
+          <p class="section-subtitle">Experience the quality of our work through these sample properties</p>
+        </header>
+        <div class="property-grid">
+          <!-- Property Card 1 -->
+          <article class="property-card">
+            <div class="property-image">
+              <img src="assets/images/property1.jpg" alt="Oceanfront Villa in Miami">
+              <div class="property-badge">Featured</div>
+              <a href="portfolio-detail.html?id=1" class="property-view">
+                <i class="fas fa-vr-cardboard"></i>
+                <span>View Tour</span>
+              </a>
+            </div>
+            <div class="property-content">
+              <h3 class="property-title">Oceanfront Villa</h3>
+              <div class="property-location">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Miami, Florida</span>
+              </div>
+              <div class="property-tags">
+                <span class="property-tag">Luxury</span>
+                <span class="property-tag">Waterfront</span>
+                <span class="property-tag">8,500 sq ft</span>
+              </div>
+              <a href="portfolio-detail.html?id=1" class="btn btn-outline property-btn">View Case Study</a>
+            </div>
+          </article>
+
+          <!-- Property Card 2 -->
+          <article class="property-card">
+            <div class="property-image">
+              <img src="assets/images/property2.jpg" alt="Penthouse in New York">
+              <div class="property-badge">New</div>
+              <a href="portfolio-detail.html?id=2" class="property-view">
+                <i class="fas fa-vr-cardboard"></i>
+                <span>View Tour</span>
+              </a>
+            </div>
+            <div class="property-content">
+              <h3 class="property-title">Penthouse Suite</h3>
+              <div class="property-location">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>New York, New York</span>
+              </div>
+              <div class="property-tags">
+                <span class="property-tag">Luxury</span>
+                <span class="property-tag">Skyline View</span>
+                <span class="property-tag">5,200 sq ft</span>
+              </div>
+              <a href="portfolio-detail.html?id=2" class="btn btn-outline property-btn">View Case Study</a>
+            </div>
+          </article>
+
+          <!-- Property Card 3 -->
+          <article class="property-card">
+            <div class="property-image">
+              <img src="assets/images/property3.jpg" alt="Mountain Retreat in Aspen">
+              <a href="portfolio-detail.html?id=3" class="property-view">
+                <i class="fas fa-vr-cardboard"></i>
+                <span>View Tour</span>
+              </a>
+            </div>
+            <div class="property-content">
+              <h3 class="property-title">Mountain Retreat</h3>
+              <div class="property-location">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Aspen, Colorado</span>
+              </div>
+              <div class="property-tags">
+                <span class="property-tag">Luxury</span>
+                <span class="property-tag">Mountain View</span>
+                <span class="property-tag">7,800 sq ft</span>
+              </div>
+              <a href="portfolio-detail.html?id=3" class="btn btn-outline property-btn">View Case Study</a>
+            </div>
+          </article>
+        </div>
+        <div class="view-all-container">
+          <a href="portfolio.html" class="btn btn-text">View All Case Studies <i class="fas fa-long-arrow-alt-right"></i></a>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Testimonial Section -->
+    <section class="testimonial-section">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title">What Our Clients Say</h2>
+          <p class="section-subtitle">Hear from real estate professionals who use our services</p>
+        </header>
+        <div class="testimonial-slider">
+          <div class="testimonial-slide active">
+            <div class="testimonial-content">
+              <div class="testimonial-quote">
+                <i class="fas fa-quote-left"></i>
+                <p>"RealVision3D has transformed how I market luxury properties. My sellers are impressed with the technology, and buyers love being able to tour properties remotely before visiting. I've seen a 40% increase in qualified leads since implementing these virtual tours."</p>
+                <i class="fas fa-quote-right"></i>
+              </div>
+              <div class="testimonial-author">
+                <img src="assets/images/testimonial-1.jpg" alt="Sarah Johnson">
+                <div class="author-info">
+                  <h4>Sarah Johnson</h4>
+                  <p>Luxury Real Estate Specialist, The Agency</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-controls">
+            <button class="testimonial-prev" aria-label="Previous testimonial">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="testimonial-dots">
+              <button class="testimonial-dot active" data-slide="0" aria-label="Testimonial 1"></button>
+              <button class="testimonial-dot" data-slide="1" aria-label="Testimonial 2"></button>
+              <button class="testimonial-dot" data-slide="2" aria-label="Testimonial 3"></button>
+            </div>
+            <button class="testimonial-next" aria-label="Next testimonial">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section class="technology-section">
+      <div class="container">
+        <div class="technology-content">
+          <div class="technology-text">
+            <h2>Unreal Engine Technology</h2>
+            <p>We utilize the same cutting-edge technology used in AAA video games and Hollywood productions to create the most realistic virtual property experiences possible.</p>
+            <ul class="technology-features">
+              <li><i class="fas fa-check"></i> Photorealistic lighting and materials</li>
+              <li><i class="fas fa-check"></i> Interactive elements for engaging experiences</li>
+              <li><i class="fas fa-check"></i> Day/night lighting simulation</li>
+              <li><i class="fas fa-check"></i> Furnishing and staging options</li>
+              <li><i class="fas fa-check"></i> VR/AR compatibility</li>
+            </ul>
+            <a href="technology.html" class="btn btn-primary">Explore Our Technology</a>
+          </div>
+          <div class="technology-image">
+            <img src="assets/images/unreal-engine-demo.jpg" alt="Unreal Engine property rendering">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-content">
+          <h2 class="cta-title">Ready to Transform Your Listings?</h2>
+          <p class="cta-description">Get started with RealVision3D and give your clients the ultimate property viewing experience.</p>
+          <div class="cta-buttons">
+            <a href="contact.html" class="btn btn-primary">Request a Quote</a>
+            <a href="tel:+12125551234" class="btn btn-secondary">Call (212) 555-1234</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-column">
+          <div class="footer-logo">REALVISION3D</div>
+          <p class="footer-description">Setting new standards in real estate marketing with immersive virtual technology.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3 class="footer-heading">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3 class="footer-heading">Contact Us</h3>
+          <address class="footer-contact">
+            <p><i class="fas fa-map-marker-alt"></i> 123 Tech Lane, Suite 400<br>New York, NY 10001</p>
+            <p><i class="fas fa-phone"></i> <a href="tel:+12125551234">(212) 555-1234</a></p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:info@realvision3d.com">info@realvision3d.com</a></p>
+          </address>
+        </div>
+        <div class="footer-column">
+          <h3 class="footer-heading">Newsletter</h3>
+          <p>Subscribe to receive updates on our latest technology and services.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2025 RealVision3D. All rights reserved.</p>
+        <ul class="footer-policy-links">
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,665 @@
+/* 
+=======================================
+LUXE ESTATES - About Page Stylesheet
+=======================================
+*/
+
+/* === Page Header === */
+.page-header {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    padding: calc(var(--spacing-lg) + 8rem) 0 var(--spacing-lg);
+    text-align: center;
+  }
+  
+  .page-title {
+    font-size: 4.8rem;
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .page-subtitle {
+    font-size: 1.8rem;
+    max-width: 70rem;
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  /* === Our Story Section === */
+  .story-section {
+    background-color: var(--color-white);
+    padding: var(--spacing-lg) 0;
+  }
+  
+  .story-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-lg);
+    align-items: center;
+  }
+  
+  .story-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 3px;
+    box-shadow: var(--shadow-md);
+  }
+  
+  .story-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform var(--transition-slow);
+  }
+  
+  .story-image:hover img {
+    transform: scale(1.03);
+  }
+  
+  .story-text h2 {
+    font-size: 3.6rem;
+    margin-bottom: var(--spacing-md);
+    position: relative;
+    padding-bottom: var(--spacing-sm);
+  }
+  
+  .story-text h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 6rem;
+    height: 2px;
+    background-color: var(--color-primary);
+  }
+  
+  .story-text p {
+    margin-bottom: var(--spacing-md);
+    line-height: 1.8;
+  }
+  
+  .story-text p:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* === Mission & Values Section === */
+  .mission-section {
+    background-color: var(--color-light-bg);
+    padding: var(--spacing-lg) 0;
+  }
+  
+  .mission-values-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-lg);
+  }
+  
+  .mission-content h2,
+  .values-content h2 {
+    font-size: 3.2rem;
+    margin-bottom: var(--spacing-md);
+    position: relative;
+    padding-bottom: var(--spacing-sm);
+  }
+  
+  .mission-content h2::after,
+  .values-content h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 6rem;
+    height: 2px;
+    background-color: var(--color-primary);
+  }
+  
+  .mission-content > p {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .mission-content h3 {
+    font-size: 2.4rem;
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .mission-list {
+    list-style: none;
+  }
+  
+  .mission-list li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .mission-icon {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin-right: var(--spacing-md);
+    flex-shrink: 0;
+  }
+  
+  .mission-item-content h4 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .mission-item-content p {
+    color: var(--color-text-light);
+    line-height: 1.6;
+  }
+  
+  .values-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+  
+  .value-item {
+    background-color: var(--color-white);
+    padding: var(--spacing-md);
+    border-radius: 3px;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-normal);
+  }
+  
+  .value-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+  }
+  
+  .value-item h3 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+  }
+  
+  .value-item p {
+    color: var(--color-text-light);
+    line-height: 1.6;
+    margin-bottom: 0;
+  }
+  
+  /* === Technology Section === */
+  .technology-section {
+    background-color: var(--color-white);
+    padding: var(--spacing-lg) 0;
+  }
+  
+  .technology-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+    align-items: center;
+  }
+  
+  .technology-content h3 {
+    font-size: 2.8rem;
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .technology-content p {
+    margin-bottom: var(--spacing-md);
+    line-height: 1.8;
+  }
+  
+  .technology-features {
+    list-style: none;
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .technology-features li {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.6rem;
+  }
+  
+  .feature-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.6rem;
+    height: 3.6rem;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border-radius: 50%;
+    margin-right: var(--spacing-sm);
+    font-size: 1.6rem;
+    flex-shrink: 0;
+  }
+  
+  .showcase-image {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: var(--shadow-md);
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .showcase-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform var(--transition-slow);
+  }
+  
+  .showcase-image:hover img {
+    transform: scale(1.03);
+  }
+  
+  .technology-cta {
+    text-align: center;
+    background-color: var(--color-light-bg);
+    padding: var(--spacing-md);
+    border-radius: 5px;
+  }
+  
+  .technology-cta h4 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .technology-cta p {
+    margin-bottom: var(--spacing-md);
+  }
+  
+  /* === Leadership Section === */
+  .leadership-section {
+    background-color: var(--color-light-bg);
+    padding: var(--spacing-lg) 0;
+  }
+  
+  .leadership-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+  }
+  
+  .leadership-card {
+    background-color: var(--color-white);
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-normal);
+  }
+  
+  .leadership-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+  }
+  
+  .leadership-image {
+    height: 30rem;
+    overflow: hidden;
+  }
+  
+  .leadership-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-slow);
+  }
+  
+  .leadership-card:hover .leadership-image img {
+    transform: scale(1.05);
+  }
+  
+  .leadership-content {
+    padding: var(--spacing-md);
+  }
+  
+  .leadership-content h3 {
+    font-size: 2.4rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .leadership-title {
+    color: var(--color-primary);
+    font-weight: 500;
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .leadership-bio {
+    color: var(--color-text-light);
+    line-height: 1.6;
+    margin-bottom: 0;
+  }
+  
+  /* === Testimonials Section === */
+  .testimonials-section {
+    background-color: var(--color-white);
+    padding: var(--spacing-lg) 0;
+  }
+  
+  .testimonials-slider {
+    position: relative;
+    max-width: 80rem;
+    margin: var(--spacing-lg) auto 0;
+  }
+  
+  .testimonial-slide {
+    display: none;
+  }
+  
+  .testimonial-slide.active {
+    display: block;
+  }
+  
+  .testimonial-content {
+    background-color: var(--color-light-bg);
+    padding: var(--spacing-lg);
+    border-radius: 5px;
+    box-shadow: var(--shadow-sm);
+  }
+  
+  .testimonial-quote {
+    text-align: center;
+    margin-bottom: var(--spacing-md);
+    position: relative;
+  }
+  
+  .testimonial-quote i {
+    color: var(--color-primary);
+    font-size: 2.4rem;
+    opacity: 0.5;
+  }
+  
+  .testimonial-quote i.fa-quote-left {
+    position: absolute;
+    top: -1rem;
+    left: -1rem;
+  }
+  
+  .testimonial-quote i.fa-quote-right {
+    position: absolute;
+    bottom: -1rem;
+    right: -1rem;
+  }
+  
+  .testimonial-quote p {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin: 2rem 0;
+    font-style: italic;
+  }
+  
+  .testimonial-author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .testimonial-author img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: var(--spacing-sm);
+  }
+  
+  .author-info h4 {
+    font-size: 1.8rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  .author-info p {
+    color: var(--color-text-light);
+    margin-bottom: 0;
+  }
+  
+  .testimonial-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: var(--spacing-md);
+  }
+  
+  .testimonial-prev,
+  .testimonial-next {
+    background-color: var(--color-white);
+    color: var(--color-text);
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: 1px solid var(--color-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--transition-normal);
+  }
+  
+  .testimonial-prev:hover,
+  .testimonial-next:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border-color: var(--color-primary);
+  }
+  
+  .testimonial-dots {
+    display: flex;
+    align-items: center;
+    margin: 0 var(--spacing-md);
+  }
+  
+  .testimonial-dot {
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    background-color: var(--color-border);
+    margin: 0 0.5rem;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: var(--transition-normal);
+  }
+  
+  .testimonial-dot.active {
+    background-color: var(--color-primary);
+  }
+  
+  /* === Partners Section === */
+  .partners-section {
+    background-color: var(--color-light-bg);
+    padding: var(--spacing-lg) 0;
+  }
+  
+  .partners-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+    align-items: center;
+  }
+  
+  .partner-item {
+    background-color: var(--color-white);
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-md);
+    border-radius: 5px;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-normal);
+  }
+  
+  .partner-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+  }
+  
+  .partner-item img {
+    max-width: 80%;
+    max-height: 70%;
+    filter: grayscale(100%);
+    opacity: 0.7;
+    transition: var(--transition-normal);
+  }
+  
+  .partner-item:hover img {
+    filter: grayscale(0);
+    opacity: 1;
+  }
+  
+  /* === Careers Section === */
+  .careers-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assets/images/careers-bg.jpg') center/cover no-repeat;
+    color: var(--color-white);
+    padding: var(--spacing-lg) 0;
+  }
+  
+  .careers-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-lg);
+    align-items: center;
+  }
+  
+  .careers-info h2 {
+    font-size: 3.6rem;
+    margin-bottom: var(--spacing-md);
+    position: relative;
+    padding-bottom: var(--spacing-sm);
+  }
+  
+  .careers-info h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 6rem;
+    height: 2px;
+    background-color: var(--color-primary);
+  }
+  
+  .careers-info p {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: var(--spacing-md);
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .careers-benefits {
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .careers-benefits h3 {
+    font-size: 2.2rem;
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .benefits-list {
+    list-style: none;
+  }
+  
+  .benefits-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .benefits-list i {
+    color: var(--color-primary);
+    font-size: 1.4rem;
+    margin-right: 1rem;
+  }
+  
+  .careers-image {
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: var(--shadow-lg);
+  }
+  
+  .careers-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform var(--transition-slow);
+  }
+  
+  .careers-image:hover img {
+    transform: scale(1.03);
+  }
+  
+  /* === Responsive === */
+  @media (max-width: 992px) {
+    .story-content,
+    .mission-values-grid,
+    .technology-grid,
+    .careers-content {
+      grid-template-columns: 1fr;
+    }
+    
+    .mission-content,
+    .values-content {
+      padding: var(--spacing-md) 0;
+    }
+    
+    .leadership-grid {
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .page-title {
+      font-size: 3.6rem;
+    }
+    
+    .story-text h2,
+    .mission-content h2,
+    .values-content h2,
+    .careers-info h2 {
+      font-size: 3rem;
+    }
+    
+    .technology-content h3 {
+      font-size: 2.4rem;
+    }
+    
+    .testimonial-quote p {
+      font-size: 1.6rem;
+    }
+    
+    .leadership-image {
+      height: 25rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .page-title {
+      font-size: 3rem;
+    }
+    
+    .story-text h2,
+    .mission-content h2,
+    .values-content h2,
+    .careers-info h2 {
+      font-size: 2.6rem;
+    }
+    
+    .testimonial-content {
+      padding: var(--spacing-md);
+    }
+    
+    .testimonial-quote i {
+      font-size: 2rem;
+    }
+    
+    .leadership-image {
+      height: 20rem;
+    }
+  }

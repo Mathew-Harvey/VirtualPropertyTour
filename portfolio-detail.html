@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oceanfront Villa | LUXE ESTATES</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+  <link rel="stylesheet" href="./css/property-detail.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="property-detail-page">
+  <header class="header scrolled">
+    <div class="container header-container">
+      <div class="logo">
+        <a href="index.html">LUXE ESTATES</a>
+      </div>
+      <nav class="main-nav">
+        <button class="mobile-menu-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li class="nav-item"><a href="properties.html">Properties</a></li>
+          <li class="nav-item"><a href="about.html">About</a></li>
+          <li class="nav-item"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Property Header -->
+    <section class="property-header">
+      <div class="container">
+        <div class="property-breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="separator">></span>
+          <a href="properties.html">Properties</a>
+          <span class="separator">></span>
+          <span>Oceanfront Villa</span>
+        </div>
+        <div class="property-header-content">
+          <div class="property-title-section">
+            <h1 class="property-title">Oceanfront Villa</h1>
+            <div class="property-location">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>435 Ocean Drive, Miami Beach, FL 33139</span>
+            </div>
+            <div class="property-price">$12,500,000</div>
+          </div>
+          <div class="property-actions">
+            <button class="btn btn-text share-btn">
+              <i class="fas fa-share-alt"></i> Share
+            </button>
+            <button class="btn btn-text favorite-btn">
+              <i class="far fa-heart"></i> Save
+            </button>
+            <a href="#schedule-tour" class="btn btn-primary">Schedule Tour</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Property Gallery -->
+    <section class="property-gallery">
+      <div class="container">
+        <div class="gallery-grid">
+          <div class="gallery-main">
+            <img src="assets/images/property1-large.jpg" alt="Oceanfront Villa main image">
+          </div>
+          <div class="gallery-thumbs">
+            <div class="gallery-thumb">
+              <img src="assets/images/property1-thumb1.jpg" alt="Oceanfront Villa - Pool view">
+            </div>
+            <div class="gallery-thumb">
+              <img src="assets/images/property1-thumb2.jpg" alt="Oceanfront Villa - Living room">
+            </div>
+            <div class="gallery-thumb">
+              <img src="assets/images/property1-thumb3.jpg" alt="Oceanfront Villa - Kitchen">
+            </div>
+            <div class="gallery-thumb">
+              <img src="assets/images/property1-thumb4.jpg" alt="Oceanfront Villa - Master bedroom">
+            </div>
+          </div>
+          <button class="btn btn-text view-all-photos">
+            <i class="fas fa-th"></i> View All Photos (24)
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Property Features -->
+    <section class="property-features">
+      <div class="container">
+        <div class="features-grid">
+          <div class="feature">
+            <i class="fas fa-bed"></i>
+            <span class="feature-value">6</span>
+            <span class="feature-label">Bedrooms</span>
+          </div>
+          <div class="feature">
+            <i class="fas fa-bath"></i>
+            <span class="feature-value">8</span>
+            <span class="feature-label">Bathrooms</span>
+          </div>
+          <div class="feature">
+            <i class="fas fa-ruler-combined"></i>
+            <span class="feature-value">8,500</span>
+            <span class="feature-label">Square Feet</span>
+          </div>
+          <div class="feature">
+            <i class="fas fa-car"></i>
+            <span class="feature-value">4</span>
+            <span class="feature-label">Garage Spaces</span>
+          </div>
+          <div class="feature">
+            <i class="fas fa-calendar-alt"></i>
+            <span class="feature-value">2021</span>
+            <span class="feature-label">Year Built</span>
+          </div>
+          <div class="feature">
+            <i class="fas fa-map"></i>
+            <span class="feature-value">0.75</span>
+            <span class="feature-label">Acres</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Virtual Tour & Details Tabs -->
+    <section class="property-tabs">
+      <div class="container">
+        <div class="tabs-container">
+          <div class="tabs-header">
+            <button class="tab-btn active" data-tab="virtual-tour">Virtual Tour</button>
+            <button class="tab-btn" data-tab="details">Details</button>
+            <button class="tab-btn" data-tab="amenities">Amenities</button>
+            <button class="tab-btn" data-tab="location">Location</button>
+          </div>
+          
+          <div class="tab-content-container">
+            <!-- Virtual Tour Tab -->
+            <div class="tab-content active" id="virtual-tour">
+              <div class="virtual-tour-container">
+                <!-- Unreal Engine Placeholder -->
+                <div class="unreal-container"></div>
+                
+                <!-- Tour Controls -->
+                <div class="tour-controls">
+                  <div class="tour-control-group">
+                    <button class="tour-control-btn rotate-left-btn" aria-label="Rotate left">
+                      <i class="fas fa-undo"></i>
+                    </button>
+                    <button class="tour-control-btn rotate-right-btn" aria-label="Rotate right">
+                      <i class="fas fa-redo"></i>
+                    </button>
+                  </div>
+                  <div class="tour-control-group">
+                    <button class="tour-control-btn zoom-in-btn" aria-label="Zoom in">
+                      <i class="fas fa-search-plus"></i>
+                    </button>
+                    <button class="tour-control-btn zoom-out-btn" aria-label="Zoom out">
+                      <i class="fas fa-search-minus"></i>
+                    </button>
+                  </div>
+                  <div class="tour-control-group">
+                    <select class="floor-selector">
+                      <option value="1">First Floor</option>
+                      <option value="2">Second Floor</option>
+                      <option value="3">Basement</option>
+                    </select>
+                  </div>
+                  <div class="tour-control-group">
+                    <button class="tour-control-btn tour-fullscreen-btn" aria-label="Toggle fullscreen">
+                      <i class="fas fa-expand"></i>
+                    </button>
+                  </div>
+                </div>
+                
+                <!-- Interactive Hotspots -->
+                <div class="hotspots-container">
+                  <!-- First Floor Hotspots -->
+                  <div class="hotspot" data-floor="1" data-room="living" data-name="Living Room" style="top: 45%; left: 25%;">
+                    <div class="hotspot-marker"></div>
+                    <div class="hotspot-label">Living Room</div>
+                  </div>
+                  <div class="hotspot" data-floor="1" data-room="kitchen" data-name="Kitchen" style="top: 30%; left: 60%;">
+                    <div class="hotspot-marker"></div>
+                    <div class="hotspot-label">Kitchen</div>
+                  </div>
+                  <div class="hotspot" data-floor="1" data-room="dining" data-name="Dining Room" style="top: 60%; left: 65%;">
+                    <div class="hotspot-marker"></div>
+                    <div class="hotspot-label">Dining Room</div>
+                  </div>
+                  
+                  <!-- Second Floor Hotspots (hidden initially) -->
+                  <div class="hotspot hidden" data-floor="2" data-room="master" data-name="Master Suite" style="top: 35%; left: 40%;">
+                    <div class="hotspot-marker"></div>
+                    <div class="hotspot-label">Master Suite</div>
+                  </div>
+                  <div class="hotspot hidden" data-floor="2" data-room="bedroom2" data-name="Guest Bedroom" style="top: 55%; left: 25%;">
+                    <div class="hotspot-marker"></div>
+                    <div class="hotspot-label">Guest Bedroom</div>
+                  </div>
+                  
+                  <!-- Basement Hotspots (hidden initially) -->
+                  <div class="hotspot hidden" data-floor="3" data-room="cinema" data-name="Home Cinema" style="top: 40%; left: 50%;">
+                    <div class="hotspot-marker"></div>
+                    <div class="hotspot-label">Home Cinema</div>
+                  </div>
+                  <div class="hotspot hidden" data-floor="3" data-room="wine" data-name="Wine Cellar" style="top: 65%; left: 30%;">
+                    <div class="hotspot-marker"></div>
+                    <div class="hotspot-label">Wine Cellar</div>
+                  </div>
+                </div>
+                
+                <!-- Room Detail Panel (hidden initially) -->
+                <div class="room-detail-panel hidden">
+                  <div class="room-detail-header">
+                    <h3 class="room-title">Room Name</h3>
+                    <button class="close-panel-btn">
+                      <i class="fas fa-times"></i>
+                    </button>
+                  </div>
+                  <div class="room-detail-content">
+                    <p>Detailed information about this room will appear here.</p>
+                    <p>Features, dimensions, and highlights will be displayed.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="virtual-tour-info">
+                <h3>About This 3D Virtual Tour</h3>
+                <p>Experience this stunning oceanfront villa in immersive 3D. Navigate through each room using the controls above, or click on hotspots to learn more about specific areas. The 3D tour provides an accurate representation of the property's layout, dimensions, and features.</p>
+                <div class="tour-instructions">
+                  <div class="instruction">
+                    <i class="fas fa-mouse-pointer"></i>
+                    <span>Click and drag to look around</span>
+                  </div>
+                  <div class="instruction">
+                    <i class="fas fa-hand-pointer"></i>
+                    <span>Click on hotspots to explore rooms</span>
+                  </div>
+                  <div class="instruction">
+                    <i class="fas fa-arrows-alt"></i>
+                    <span>Use controls to rotate and zoom</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Details Tab -->
+            <div class="tab-content" id="details">
+              <div class="property-description">
+                <h3>Property Details</h3>
+                <p>This breathtaking oceanfront villa offers unparalleled luxury living with stunning views of the Atlantic Ocean. Masterfully designed by renowned architect Richard Meier, this contemporary masterpiece showcases floor-to-ceiling glass walls, soaring ceilings, and an open concept floor plan that seamlessly connects indoor and outdoor living spaces.</p>
+                <p>The main level features a grand living area with a fireplace, formal dining room, gourmet chef's kitchen with top-of-the-line appliances, and a spacious primary suite with a private terrace, dual walk-in closets, and a spa-like bathroom.</p>
+                <p>The upper level houses four additional en-suite bedrooms, each with ocean views and private balconies. The lower level includes a state-of-the-art home theater, wine cellar, fitness room, and staff quarters.</p>
+                <p>The outdoor oasis boasts an infinity-edge pool, spa, summer kitchen, multiple terraces, and direct beach access. Additional features include a 4-car garage, smart home technology, hurricane-resistant windows, and a backup generator.</p>
+                
+                <div class="property-specs">
+                  <div class="specs-column">
+                    <h4>Interior Features</h4>
+                    <ul>
+                      <li>Custom Italian cabinetry throughout</li>
+                      <li>Marble and hardwood flooring</li>
+                      <li>Smart home technology system</li>
+                      <li>Chef's kitchen with dual islands</li>
+                      <li>Butler's pantry</li>
+                      <li>Wine cellar (500+ bottle capacity)</li>
+                      <li>Home theater with premium audio</li>
+                      <li>Home gym with sauna</li>
+                      <li>Elevator serving all floors</li>
+                    </ul>
+                  </div>
+                  <div class="specs-column">
+                    <h4>Exterior Features</h4>
+                    <ul>
+                      <li>Infinity-edge swimming pool</li>
+                      <li>Heated spa</li>
+                      <li>Summer kitchen</li>
+                      <li>Covered and open terraces</li>
+                      <li>Professionally landscaped grounds</li>
+                      <li>Private beach access</li>
+                      <li>Outdoor shower</li>
+                      <li>4-car climate-controlled garage</li>
+                      <li>Backup generator</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Amenities Tab -->
+            <div class="tab-content" id="amenities">
+              <div class="amenities-list">
+                <h3>Property Amenities</h3>
+                <div class="amenities-grid">
+                  <div class="amenity-category">
+                    <h4>Interior</h4>
+                    <ul>
+                      <li><i class="fas fa-check"></i> Central Air Conditioning</li>
+                      <li><i class="fas fa-check"></i> Central Heating</li>
+                      <li><i class="fas fa-check"></i> Smart Home System</li>
+                      <li><i class="fas fa-check"></i> Chef's Kitchen</li>
+                      <li><i class="fas fa-check"></i> Wine Cellar</li>
+                      <li><i class="fas fa-check"></i> Home Theater</li>
+                      <li><i class="fas fa-check"></i> Gym/Fitness Room</li>
+                      <li><i class="fas fa-check"></i> Office/Study</li>
+                      <li><i class="fas fa-check"></i> Elevator</li>
+                      <li><i class="fas fa-check"></i> Fireplace</li>
+                      <li><i class="fas fa-check"></i> Walk-in Closets</li>
+                      <li><i class="fas fa-check"></i> Marble Floors</li>
+                    </ul>
+                  </div>
+                  <div class="amenity-category">
+                    <h4>Exterior</h4>
+                    <ul>
+                      <li><i class="fas fa-check"></i> Swimming Pool</li>
+                      <li><i class="fas fa-check"></i> Hot Tub/Spa</li>
+                      <li><i class="fas fa-check"></i> Outdoor Kitchen</li>
+                      <li><i class="fas fa-check"></i> Terrace/Balcony</li>
+                      <li><i class="fas fa-check"></i> Private Beach Access</li>
+                      <li><i class="fas fa-check"></i> Garage</li>
+                      <li><i class="fas fa-check"></i> Gated Property</li>
+                      <li><i class="fas fa-check"></i> Landscaped Gardens</li>
+                      <li><i class="fas fa-check"></i> Oceanfront</li>
+                      <li><i class="fas fa-check"></i> Outdoor Shower</li>
+                      <li><i class="fas fa-check"></i> BBQ Area</li>
+                      <li><i class="fas fa-check"></i> Security System</li>
+                    </ul>
+                  </div>
+                  <div class="amenity-category">
+                    <h4>Community</h4>
+                    <ul>
+                      <li><i class="fas fa-check"></i> 24/7 Security</li>
+                      <li><i class="fas fa-check"></i> Beachfront Community</li>
+                      <li><i class="fas fa-check"></i> Gated Community</li>
+                      <li><i class="fas fa-check"></i> Concierge Services</li>
+                      <li><i class="fas fa-check"></i> Marina Access</li>
+                      <li><i class="fas fa-check"></i> Golf Course Nearby</li>
+                      <li><i class="fas fa-check"></i> Tennis Courts</li>
+                      <li><i class="fas fa-check"></i> Spa Services</li>
+                      <li><i class="fas fa-check"></i> Fitness Center</li>
+                      <li><i class="fas fa-check"></i> Club House</li>
+                      <li><i class="fas fa-check"></i> Restaurant</li>
+                      <li><i class="fas fa-check"></i> Valet Parking</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Location Tab -->
+            <div class="tab-content" id="location">
+              <div class="location-container">
+                <h3>Location & Neighborhood</h3>
+                <div class="location-description">
+                  <p>This exceptional oceanfront villa is situated in the prestigious neighborhood of Miami Beach, offering the perfect blend of privacy and convenience. The property enjoys 100 feet of pristine beachfront with direct access to the Atlantic Ocean.</p>
+                  <p>The neighborhood is known for its luxury estates, world-class dining, and upscale shopping. It's just minutes away from the vibrant South Beach district, renowned art galleries, and cultural attractions.</p>
+                </div>
+                <div class="location-map">
+                  <!-- Map would be embedded here using Google Maps or similar -->
+                  <div class="map-placeholder">
+                    <img src="assets/images/map-placeholder.jpg" alt="Property location map">
+                  </div>
+                </div>
+                <div class="nearby-points">
+                  <h4>Nearby Points of Interest</h4>
+                  <div class="points-grid">
+                    <div class="point-category">
+                      <h5><i class="fas fa-utensils"></i> Dining</h5>
+                      <ul>
+                        <li>The Surf Club Restaurant (0.8 miles)</li>
+                        <li>Nobu Miami (1.2 miles)</li>
+                        <li>Casa Tua (2.5 miles)</li>
+                      </ul>
+                    </div>
+                    <div class="point-category">
+                      <h5><i class="fas fa-shopping-bag"></i> Shopping</h5>
+                      <ul>
+                        <li>Bal Harbour Shops (1.5 miles)</li>
+                        <li>Lincoln Road Mall (3.2 miles)</li>
+                        <li>Design District (4.7 miles)</li>
+                      </ul>
+                    </div>
+                    <div class="point-category">
+                      <h5><i class="fas fa-graduation-cap"></i> Schools</h5>
+                      <ul>
+                        <li>Miami Country Day School (2.3 miles)</li>
+                        <li>Ransom Everglades School (5.1 miles)</li>
+                        <li>Pine Crest School (7.8 miles)</li>
+                      </ul>
+                    </div>
+                    <div class="point-category">
+                      <h5><i class="fas fa-plane"></i> Transportation</h5>
+                      <ul>
+                        <li>Miami International Airport (15 miles)</li>
+                        <li>Fort Lauderdale Airport (28 miles)</li>
+                        <li>Miami Seaport (12 miles)</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Property Floor Plans -->
+    <section class="floor-plans">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title">Floor Plans</h2>
+          <p class="section-subtitle">Explore the layout of this exceptional property</p>
+        </header>
+        <div class="floor-plan-tabs">
+          <div class="floor-plan-nav">
+            <button class="floor-plan-tab active" data-floor="1">First Floor</button>
+            <button class="floor-plan-tab" data-floor="2">Second Floor</button>
+            <button class="floor-plan-tab" data-floor="3">Basement</button>
+          </div>
+          <div class="floor-plan-content">
+            <div class="floor-plan-item active" data-floor="1">
+              <div class="floor-plan-image">
+                <img src="assets/images/floor-plan-1.jpg" alt="First Floor Plan">
+              </div>
+              <div class="floor-plan-details">
+                <h3>First Floor</h3>
+                <p>The main level features a grand entry foyer, formal living room, dining room, gourmet kitchen, family room, home office, and guest suite.</p>
+                <ul class="floor-plan-rooms">
+                  <li>Entry Foyer: 12' x 16'</li>
+                  <li>Living Room: 22' x 28'</li>
+                  <li>Dining Room: 18' x 20'</li>
+                  <li>Kitchen: 20' x 24'</li>
+                  <li>Family Room: 20' x 22'</li>
+                  <li>Office: 14' x 16'</li>
+                  <li>Guest Suite: 16' x 18'</li>
+                  <li>Powder Room: 6' x 8'</li>
+                </ul>
+              </div>
+            </div>
+            <div class="floor-plan-item" data-floor="2">
+              <div class="floor-plan-image">
+                <img src="assets/images/floor-plan-2.jpg" alt="Second Floor Plan">
+              </div>
+              <div class="floor-plan-details">
+                <h3>Second Floor</h3>
+                <p>The upper level includes the master suite with private terrace, three additional en-suite bedrooms, and a central sitting area.</p>
+                <ul class="floor-plan-rooms">
+                  <li>Master Suite: 24' x 26'</li>
+                  <li>Master Bathroom: 16' x 18'</li>
+                  <li>Master Closet: 12' x 14'</li>
+                  <li>Bedroom 2: 16' x 18'</li>
+                  <li>Bedroom 3: 16' x 18'</li>
+                  <li>Bedroom 4: 18' x 20'</li>
+                  <li>Sitting Area: 14' x 16'</li>
+                  <li>Laundry Room: 8' x 10'</li>
+                </ul>
+              </div>
+            </div>
+            <div class="floor-plan-item" data-floor="3">
+              <div class="floor-plan-image">
+                <img src="assets/images/floor-plan-3.jpg" alt="Basement Floor Plan">
+              </div>
+              <div class="floor-plan-details">
+                <h3>Basement</h3>
+                <p>The lower level contains a home theater, wine cellar, fitness room, spa with sauna, staff quarters, and additional storage.</p>
+                <ul class="floor-plan-rooms">
+                  <li>Home Theater: 20' x 24'</li>
+                  <li>Wine Cellar: 12' x 16'</li>
+                  <li>Fitness Room: 18' x 20'</li>
+                  <li>Spa/Sauna: 14' x 16'</li>
+                  <li>Staff Quarters: 16' x 18'</li>
+                  <li>Storage: 12' x 18'</li>
+                  <li>Mechanical Room: 10' x 12'</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Agent Information & Schedule Tour -->
+    <section id="schedule-tour" class="agent-section">
+      <div class="container">
+        <div class="agent-tour-grid">
+          <div class="agent-info">
+            <h3>Property Representative</h3>
+            <div class="agent-card">
+              <div class="agent-photo">
+                <img src="assets/images/agent.jpg" alt="Emma Richardson">
+              </div>
+              <div class="agent-details">
+                <h4 class="agent-name">Emma Richardson</h4>
+                <p class="agent-title">Luxury Real Estate Specialist</p>
+                <div class="agent-contact">
+                  <p><i class="fas fa-phone"></i> (305) 555-7890</p>
+                  <p><i class="fas fa-envelope"></i> emma@luxeestates.com</p>
+                </div>
+                <div class="agent-socials">
+                  <a href="#" class="agent-social"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#" class="agent-social"><i class="fab fa-instagram"></i></a>
+                </div>
+                <a href="agent-profile.html" class="btn btn-text">View Profile</a>
+              </div>
+            </div>
+          </div>
+          <div class="schedule-tour-form">
+            <h3>Schedule a Private Tour</h3>
+            <p>Experience this exceptional property in person or via a live guided virtual tour.</p>
+            <form class="tour-form">
+              <div class="form-group">
+                <label for="tour-name">Your Name</label>
+                <input type="text" id="tour-name" required>
+              </div>
+              <div class="form-group">
+                <label for="tour-email">Email</label>
+                <input type="email" id="tour-email" required>
+              </div>
+              <div class="form-group">
+                <label for="tour-phone">Phone</label>
+                <input type="tel" id="tour-phone" required>
+              </div>
+              <div class="form-group">
+                <label for="tour-type">Tour Type</label>
+                <select id="tour-type">
+                  <option value="in-person">In-Person Tour</option>
+                  <option value="virtual">Live Virtual Tour</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="tour-date">Preferred Date</label>
+                <input type="date" id="tour-date" required>
+              </div>
+              <div class="form-group">
+                <label for="tour-time">Preferred Time</label>
+                <select id="tour-time">
+                  <option value="morning">Morning (9am - 12pm)</option>
+                  <option value="afternoon">Afternoon (12pm - 5pm)</option>
+                  <option value="evening">Evening (5pm - 7pm)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="tour-message">Additional Notes</label>
+                <textarea id="tour-message" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Request Tour</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Similar Properties -->
+    <section class="similar-properties">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title">Similar Properties</h2>
+          <p class="section-subtitle">You might also be interested in these luxury estates</p>
+        </header>
+        <div class="property-grid">
+          <!-- Property Card 1 -->
+          <article class="property-card">
+            <div class="property-image">
+              <img src="assets/images/property2.jpg" alt="Penthouse in New York">
+              <button class="property-favorite" aria-label="Add to favorites">
+                <i class="far fa-heart"></i>
+              </button>
+            </div>
+            <div class="property-content">
+              <h3 class="property-title">Penthouse Suite</h3>
+              <div class="property-location">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>New York, New York</span>
+              </div>
+              <div class="property-details">
+                <div class="property-detail">
+                  <i class="fas fa-bed"></i>
+                  <span>4 Beds</span>
+                </div>
+                <div class="property-detail">
+                  <i class="fas fa-bath"></i>
+                  <span>4.5 Baths</span>
+                </div>
+                <div class="property-detail">
+                  <i class="fas fa-ruler-combined"></i>
+                  <span>5,200 sq ft</span>
+                </div>
+              </div>
+              <div class="property-price">$18,750,000</div>
+              <a href="property-detail.html?id=2" class="btn btn-outline property-btn">View Property</a>
+            </div>
+          </article>
+
+          <!-- Property Card 2 -->
+          <article class="property-card">
+            <div class="property-image">
+              <img src="assets/images/property3.jpg" alt="Mountain Retreat in Aspen">
+              <button class="property-favorite" aria-label="Add to favorites">
+                <i class="far fa-heart"></i>
+              </button>
+            </div>
+            <div class="property-content">
+              <h3 class="property-title">Mountain Retreat</h3>
+              <div class="property-location">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Aspen, Colorado</span>
+              </div>
+              <div class="property-details">
+                <div class="property-detail">
+                  <i class="fas fa-bed"></i>
+                  <span>5 Beds</span>
+                </div>
+                <div class="property-detail">
+                  <i class="fas fa-bath"></i>
+                  <span>6 Baths</span>
+                </div>
+                <div class="property-detail">
+                  <i class="fas fa-ruler-combined"></i>
+                  <span>7,800 sq ft</span>
+                </div>
+              </div>
+              <div class="property-price">$10,900,000</div>
+              <a href="property-detail.html?id=3" class="btn btn-outline property-btn">View Property</a>
+            </div>
+          </article>
+
+          <!-- Property Card 3 -->
+          <article class="property-card">
+            <div class="property-image">
+              <img src="assets/images/property4.jpg" alt="Modern Villa in Malibu">
+              <button class="property-favorite" aria-label="Add to favorites">
+                <i class="far fa-heart"></i>
+              </button>
+            </div>
+            <div class="property-content">
+              <h3 class="property-title">Modern Villa</h3>
+              <div class="property-location">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Malibu, California</span>
+              </div>
+              <div class="property-details">
+                <div class="property-detail">
+                  <i class="fas fa-bed"></i>
+                  <span>5 Beds</span>
+                </div>
+                <div class="property-detail">
+                  <i class="fas fa-bath"></i>
+                  <span>7 Baths</span>
+                </div>
+                <div class="property-detail">
+                  <i class="fas fa-ruler-combined"></i>
+                  <span>6,500 sq ft</span>
+                </div>
+              </div>
+              <div class="property-price">$15,750,000</div>
+              <a href="property-detail.html?id=4" class="btn btn-outline property-btn">View Property</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Property Downloads -->
+    <section class="property-downloads">
+      <div class="container">
+        <div class="downloads-container">
+          <h3>Property Documents</h3>
+          <p>Download additional information about this property.</p>
+          <div class="downloads-grid">
+            <a href="#" class="download-item">
+              <i class="far fa-file-pdf"></i>
+              <span class="download-title">Property Brochure</span>
+              <span class="download-size">PDF, 4.2 MB</span>
+            </a>
+            <a href="#" class="download-item">
+              <i class="far fa-file-alt"></i>
+              <span class="download-title">Detailed Floor Plans</span>
+              <span class="download-size">PDF, 2.8 MB</span>
+            </a>
+            <a href="#" class="download-item">
+              <i class="far fa-images"></i>
+              <span class="download-title">High-Resolution Photos</span>
+              <span class="download-size">ZIP, 18.5 MB</span>
+            </a>
+            <a href="#" class="download-item">
+              <i class="far fa-file-pdf"></i>
+              <span class="download-title">Neighborhood Guide</span>
+              <span class="download-size">PDF, 3.6 MB</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-column">
+          <div class="footer-logo">LUXE ESTATES</div>
+          <p class="footer-description">Setting new standards in luxury real estate with immersive virtual technology.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3 class="footer-heading">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="properties.html">Properties</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3 class="footer-heading">Contact Us</h3>
+          <address class="footer-contact">
+            <p><i class="fas fa-map-marker-alt"></i> 123 Luxury Lane, Suite 400<br>New York, NY 10001</p>
+            <p><i class="fas fa-phone"></i> <a href="tel:+12125551234">(212) 555-1234</a></p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:info@luxeestates.com">info@luxeestates.com</a></p>
+          </address>
+        </div>
+        <div class="footer-column">
+          <h3 class="footer-heading">Newsletter</h3>
+          <p>Subscribe to receive updates on exclusive properties.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2025 Luxe Estates. All rights reserved.</p>
+        <ul class="footer-policy-links">
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+  <script src="./js/property-detail.js"></script>
+</body>
+</html>
